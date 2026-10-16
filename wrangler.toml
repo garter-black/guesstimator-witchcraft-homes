@@ -1,0 +1,7 @@
+name = "guesstimator-witchcraft-homes"
+compatibility_date = "2026-08-15"
+pages_build_output_dir = "."
+
+[[kv_namespaces]]
+binding = "ORDERS"
+id = "b11dd788a1d04b80acfbefc1d256d9db"

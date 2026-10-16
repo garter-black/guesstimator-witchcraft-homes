@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Witchcraft AI presents: Athena 5D Property Value Guesstimator</title>
+<meta name="description" content="AI-assisted, AI-debated property value and strategy guesstimate of any address. Six frontier AI models debate fifteen methods. PDF results to your inbox. Not a formal valuation.">
+<meta property="og:title" content="Witchcraft AI presents: Athena 5D Property Value Guesstimator">
+<meta property="og:description" content="Six frontier AI models debate your address down to one number. PDF results to your inbox. Not a formal valuation.">
+<meta property="og:url" content="https://guesstimator.witchcraft.homes/">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#E6E0C8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300..700&family=Prata&display=swap">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Witchcraft AI Property Guesstimator","description":"AI-assisted, AI-debated property value and strategy guesstimate of any Australian address. Six frontier AI models debate fifteen methods across five lenses. PDF results delivered to inbox. Not a formal valuation.","url":"https://guesstimator.witchcraft.homes/","logo":"https://witchcraft.homes/assets/foot-art.jpg","areaServed":{"@type":"AdministrativeArea","name":"Australia"},"priceRange":"AUD $22 - $40","hasOfferCatalog":{"@type":"OfferCatalog","name":"Property Guesstimate Tiers","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"BYO API Keys Guesstimate"},"price":"22","priceCurrency":"AUD","description":"$20 fee + GST. Your own API tokens (~$67)."},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Use My Keys — All-In Guesstimate"},"price":"40","priceCurrency":"AUD","description":"Everything included. Bulk token pricing passed through."}]},"provider":{"@type":"Organization","name":"WITCHCRAFT AI","url":"https://witchcraft.business/"},"address":{"@type":"PostalAddress","addressLocality":"Sydney","addressRegion":"NSW","addressCountry":"AU"}}</script>
+<style>
+:root{
+  --bg:#E6E0C8; --ink:#33413A; --bone:#F1ECD9; --sheet:#F5F1E3; --table:#B9B4A0;
+  --dim:#4B5B51; --hair:#CCC5AC; --rule:#DAD4BE;
+  --oxide:#8F3924; --focus:#B24C2E; --steel:#456280;
+  --disp:"Prata",Georgia,"Times New Roman",serif;
+  --body:"DM Sans","Segoe UI",system-ui,-apple-system,Helvetica,Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-weight:400;line-height:1.62;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px 140px}
+.topbar{display:flex;align-items:center;gap:12px 26px;flex-wrap:wrap;padding:18px 0;border-bottom:1px solid var(--hair)}
+.topbar .brand{font-family:var(--disp);font-size:14px;letter-spacing:.1em;margin-right:auto}
+.topbar .brand b{color:var(--dim);font-weight:400}
+.topbar a{font-size:10px;font-weight:500;letter-spacing:.24em;text-transform:uppercase;text-decoration:none;color:var(--dim)}
+.topbar a:hover{color:var(--oxide)}
+.authbox{display:flex;gap:10px}
+.authbtn{font-family:var(--body);font-weight:500;font-size:10px;letter-spacing:.2em;text-transform:uppercase;
+  background:var(--ink);color:var(--bone);border:1px solid var(--ink);padding:9px 14px;cursor:pointer}
+.authbtn.ghost{background:transparent;color:var(--ink)}
+.authbtn:hover{opacity:.86}
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:start;padding:64px 0 40px}
+.eyebrow{font-weight:500;font-size:10px;letter-spacing:.34em;text-transform:uppercase;color:var(--dim)}
+h1{font-family:var(--disp);font-weight:400;font-size:clamp(30px,4.4vw,46px);line-height:1.16;margin-top:20px;letter-spacing:.01em}
+h1 .q{color:var(--oxide);font-size:.62em;display:block;letter-spacing:.04em;margin-top:14px;font-family:var(--body);font-weight:500;line-height:1.7}
+.promise{font-size:17px;line-height:1.55;margin-top:24px;max-width:40ch}
+.mum{margin-top:16px;font-size:14px;color:var(--dim);max-width:44ch}
+.rule-sole{width:120px;height:1px;background:var(--oxide);margin:26px 0 0}
+.card{background:var(--sheet);border:1px solid var(--hair);padding:34px 34px 38px}
+.card h2{font-family:var(--disp);font-weight:400;font-size:22px;line-height:1.3}
+.card .sub{margin-top:12px;font-size:13.5px;color:var(--dim);line-height:1.7}
+.field{margin-top:22px}
+.field label{display:block;font-size:9.5px;font-weight:500;letter-spacing:.28em;text-transform:uppercase;color:var(--dim);margin-bottom:9px}
+.field input,.field textarea{width:100%;background:var(--bg);border:1px solid var(--hair);color:var(--ink);
+  font-family:var(--body);font-size:15px;padding:13px 15px;outline:none}
+.field input:focus,.field textarea:focus{border-color:var(--oxide)}
+.field textarea{resize:vertical;min-height:74px}
+.tiers{margin-top:24px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.tier{border:1px solid var(--hair);background:var(--bg);padding:16px 18px;cursor:pointer;position:relative}
+.tier.on{border-color:var(--oxide);background:rgba(143,57,36,.05)}
+.tier input{position:absolute;opacity:0}
+.tier .t{font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase}
+.tier .p{font-family:var(--disp);font-size:26px;margin-top:6px}
+.tier .d{font-size:11px;color:var(--dim);margin-top:6px;line-height:1.55}
+.note{margin-top:18px;font-size:12.5px;color:var(--dim);line-height:1.7}
+.note b{color:var(--oxide);font-weight:600}
+.go{margin-top:26px;display:block;width:100%;text-align:center;font-family:var(--body);font-weight:500;
+  font-size:11px;letter-spacing:.26em;text-transform:uppercase;text-decoration:none;
+  background:var(--ink);color:var(--bone);border:1px solid var(--ink);padding:16px 20px;cursor:pointer}
+.go:hover{background:transparent;color:var(--ink)}
+.go.dim{opacity:.6;pointer-events:none}
+.formmsg{margin-top:14px;font-size:12.5px;color:var(--oxide);min-height:18px}
+.agree{display:flex;gap:10px;align-items:flex-start;margin-top:20px;font-size:12px;color:var(--dim);line-height:1.6;cursor:pointer}
+.agree input{width:15px;height:15px;margin:2px 0 0;accent-color:#8F3924;cursor:pointer;flex:0 0 auto}
+.agree a{color:var(--ink)}
+.how{display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px;margin-top:76px}
+.step{border-top:1px solid var(--rule);padding-top:18px}
+.step .n{font-family:var(--disp);font-size:13px;color:var(--oxide)}
+.step h3{font-family:var(--disp);font-weight:400;font-size:16px;margin-top:10px;letter-spacing:.04em}
+.step p{font-size:13px;color:var(--dim);margin-top:9px;line-height:1.65}
+.includes{margin-top:76px;background:var(--sheet);border:1px solid var(--hair);padding:36px 38px}
+.includes h2{font-family:var(--disp);font-weight:400;font-size:21px}
+.includes ul{margin-top:18px;list-style:none}
+.includes li{padding:11px 0;border-bottom:1px solid var(--rule);font-size:14px;color:var(--dim)}
+.includes li::before{content:"· ";color:var(--oxide);font-weight:700}
+.includes li b{color:var(--ink);font-weight:600}
+footer{margin-top:90px;padding-top:26px;border-top:1px solid var(--hair);display:flex;flex-wrap:wrap;gap:12px 30px;
+  align-items:baseline;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--dim)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--oxide)}
+footer .legal{margin-top:10px;width:100%;font-size:9px;letter-spacing:.18em;color:var(--dim)}
+@media(max-width:900px){.hero{grid-template-columns:1fr;gap:36px}.tiers{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="topbar">
+    <a class="brand" href="/">GUESSTIMATOR<b>.</b>WITCHCRAFT<b>.</b>HOMES</a>
+    <a href="https://witchcraft.homes">← THE WITCHCRAFT.HOMES DESK</a>
+    <span class="authbox" id="authbox">
+      <button class="authbtn" type="button" id="btn-google" title="Sign in with Google">GOOGLE</button>
+      <button class="authbtn ghost" type="button" id="btn-github" title="Sign in with GitHub">GITHUB</button>
+    </span>
+    <span id="whoami" style="font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--dim)"></span>
+  </nav>
+
+  <section class="hero">
+    <div>
+      <p class="eyebrow">WITCHCRAFT AI PRESENTS</p>
+      <h1>Athena Quantitative 5-Dimensional Property Value Guesstimator
+        <span class="q">(in other words, WITCHCRAFT™ — AI-assisted, AI-led, AI-debated, AI-improved,
+        AI-told-me-just-go-away-don't-bother-them quantitative stochastic quantum
+        extrachronospatial value guesstimate of any property address you'd like.)</span>
+      </h1>
+      <div class="rule-sole"></div>
+      <p class="promise">Aspiring to be Australia's No.1 highest accuracy, best priced, quickest time,
+      coolest and awesomest complex commercial and residential property, real estate and development
+      value and strategy guesstimator ever existed in the history of Australia. Like, legendarily epic.</p>
+      <p class="mum">What, my mom said aim high. If I miss, I go to the moon or something.</p>
+    </div>
+
+    <div class="card" id="order-card">
+      <h2>Tell us the address. Leave with the figure.</h2>
+      <p class="sub">Six frontier AI models debate your address across fifteen methods and five lenses,
+      then argue with each other until one number wins. Your PDF lands in your inbox. About 24-48 hours.</p>
+
+      <div class="field">
+        <label for="address">PROPERTY ADDRESS</label>
+        <textarea id="address" placeholder="e.g. 53 North Street, Oberon NSW 2787"></textarea>
+      </div>
+      <div class="field">
+        <label for="email">YOUR EMAIL (RESULTS ARRIVE HERE AS PDF)</label>
+        <input id="email" type="email" placeholder="you@example.com" autocomplete="email">
+      </div>
+
+      <div class="tiers">
+        <label class="tier on" id="tier-byo">
+          <input type="radio" name="tier" value="byo" checked>
+          <div class="t">BRING YOUR OWN API KEYS</div>
+          <div class="p">$22</div>
+          <div class="d">$20 fee for me only + GST. Your own tokens run ~$67 extra.</div>
+        </label>
+        <label class="tier" id="tier-mine">
+          <input type="radio" name="tier" value="mine">
+          <div class="t">USE MY KEYS — ALL-IN</div>
+          <div class="p">$40</div>
+          <div class="d">Everything included. I buy 15-20 billion tokens a month. Stupid cheap bulk.</div>
+        </label>
+      </div>
+
+      <p class="note">FIRST ADDRESS 75% OFF per account — <b>code FIRST75 at checkout</b>.
+      Sign in with Google or GitHub so we can track your one-time discount.</p>
+
+      <label class="agree"><input type="checkbox" id="agree">
+        <span>I have read and agree to the <a href="/terms/" target="_blank">Terms</a>
+        (a Guesstimate is not a valuation), the <a href="/privacy/" target="_blank">Privacy
+        Collection Notice</a> and the <a href="/refunds/" target="_blank">Refund & Dispute
+        Policy</a>.</span></label>
+
+      <button class="go" type="button" id="go">GUESSTIMATE IT →</button>
+      <p class="formmsg" id="formmsg" role="status"></p>
+    </div>
+  </section>
+
+  <section class="how">
+    <div class="step"><div class="n">01</div><h3>PAY</h3><p>Pick your tier. Stripe handles the money. You get a receipt, we get the order.</p></div>
+    <div class="step"><div class="n">02</div><h3>DEBATE</h3><p>Six frontier AI models run fifteen methods: statutory, comparable, residual, highest and best, adversarial, rezoning odds, DA patterns, the lot. They argue. Dissenters are named.</p></div>
+    <div class="step"><div class="n">03</div><h3>PDF IN YOUR INBOX</h3><p>One converged figure, the council's range, the top plays ranked by return ÷ risk × cost × time, and what would kill each one. 4D site model included.</p></div>
+  </section>
+
+  <section class="includes">
+    <h2>WHAT THE PDF CONTAINS</h2>
+    <ul>
+      <li><b>One converged guesstimate</b> — a single number per method, with the council's low-high band and confidence.</li>
+      <li><b>Fifteen methods</b> — as-is, highest and best use, flash sale, residual land, marginal development, amalgamation (buy and call-option), demolish-and-rebuild, rezoning probability, use conversion, DA pattern handbook, council strategy, AI-infrastructure, land bank, and a wildcard.</li>
+      <li><b>Named dissenters</b> — which model held out, on what, and why it lost (or won).</li>
+      <li><b>Top three plays</b> — ranked on your score: highest return for lowest risk, highest success chance, lowest cost, lowest time.</li>
+      <li><b>A 4D site model</b> — the lot, the neighbours, the built form, and a time scrubber from as-is to ten-year hold.</li>
+      <li><b>The kill assumption</b> — the one fact that, if wrong, flips the whole answer. Plus executable next steps.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <a href="mailto:0@black.industries">0@BLACK.INDUSTRIES</a>
+    <a href="https://witchcraft.homes">WITCHCRAFT.HOMES</a>
+    <a href="https://witchcraft.business">WITCHCRAFT.BUSINESS</a>
+    <a href="/terms/">TERMS</a>
+    <a href="/privacy/">PRIVACY</a>
+    <a href="/refunds/">REFUNDS</a>
+    <span>SYDNEY · NSW · AU</span>
+    <p class="legal">© WITCHCRAFT AI · PITCH BLACK INDUSTRIES · MMXXVI — NOT A FORMAL VALUATION. AN AI-DEBATED OPINION ESTIMATE. INDEPENDENT ADVICE RECOMMENDED FOR ANYTHING SERIOUS. RESULTS DELIVERED AS PDF TO THE EMAIL YOU PROVIDE.</p>
+  </footer>
+</div>
+
+<script
+  defer
+  crossorigin="anonymous"
+  src="https://clerk.witchcraft.homes/npm/@clerk/ui@1/dist/ui.browser.js"
+  type="text/javascript"
+></script>
+<script
+  defer
+  crossorigin="anonymous"
+  data-clerk-publishable-key="pk_live_Y2xlcmsud2l0Y2hjcmFmdC5ob21lcyQ"
+  src="https://clerk.witchcraft.homes/npm/@clerk/clerk-js@6/dist/clerk.browser.js"
+  type="text/javascript"
+></script>
+<script>
+(function(){
+  "use strict";
+  var BYO_LINK = "https://buy.stripe.com/fZubIU8H20i5eDAeoT5os03";
+  var MINE_LINK = "https://buy.stripe.com/8x24gse1mgh3bro4Oj5os04";
+  var card = document.getElementById("order-card");
+  var go = document.getElementById("go");
+  var msg = document.getElementById("formmsg");
+  var addr = document.getElementById("address");
+  var email = document.getElementById("email");
+
+  function tier(){ return document.querySelector('input[name="tier"]:checked').value; }
+  [document.getElementById("tier-byo"), document.getElementById("tier-mine")].forEach(function(t){
+    t.addEventListener("click", function(){
+      document.querySelectorAll(".tier").forEach(function(x){ x.classList.remove("on"); });
+      t.classList.add("on");
+    });
+  });
+
+  function payLink(t){
+    var link = (t === "byo") ? BYO_LINK : MINE_LINK;
+    var e = email.value.trim();
+    if (e && /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(e)) {
+      link += "?prefilled_email=" + encodeURIComponent(e);
+    }
+    return link;
+  }
+
+  go.addEventListener("click", function(){
+    var a = addr.value.trim(), e = email.value.trim();
+    msg.textContent = "";
+    if (a.length < 6) { msg.textContent = "An address, please. Street, suburb, postcode."; addr.focus(); return; }
+    if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(e)) { msg.textContent = "A real email, please. That's where the PDF goes."; email.focus(); return; }
+    if (!document.getElementById("agree").checked) { msg.textContent = "Tick the box: you agree to the Terms, Privacy Notice and Refund Policy."; return; }
+    go.classList.add("dim");
+    msg.textContent = "Sending you to checkout…";
+    var t = tier();
+    try {
+      fetch("/api/order", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({address: a, email: e, tier: t, terms_version: "2026-09-03-v1", terms_accepted: true})
+      }).then(function(r){ return r.json(); }).then(function(d){
+        window.location.href = d.url || payLink(t);
+      }).catch(function(){
+        window.location.href = payLink(t);
+      });
+    } catch(err) {
+      window.location.href = payLink(t);
+    }
+  });
+
+  /* --- sign in: Clerk (production instance, clerk.witchcraft.homes) --- */
+  var whoEl = document.getElementById("whoami");
+  function paintAuth(){
+    if (!window.Clerk || !window.Clerk.loaded) return;
+    var u = window.Clerk.user;
+    var b = document.getElementById("authbox");
+    if (u) {
+      whoEl.textContent = "SIGNED IN · " + (u.primaryEmailAddress ? u.primaryEmailAddress.emailAddress : "ACCOUNT");
+      b.innerHTML = '<button class="authbtn ghost" type="button" id="clerk-signout">SIGN OUT</button>';
+      document.getElementById("clerk-signout").addEventListener("click", function(){
+        window.Clerk.signOut();
+      });
+    } else {
+      whoEl.textContent = "";
+      b.innerHTML = '<button class="authbtn" type="button" id="clerk-google">GOOGLE</button>' +
+                    '<button class="authbtn ghost" type="button" id="clerk-github">GITHUB</button>';
+      document.getElementById("clerk-google").addEventListener("click", function(){
+        window.Clerk.openSignIn({ strategy: "oauth_google" });
+      });
+      document.getElementById("clerk-github").addEventListener("click", function(){
+        window.Clerk.openSignIn({ strategy: "oauth_github" });
+      });
+    }
+  }
+  window.addEventListener("load", async function(){
+    try {
+      if (window.Clerk) {
+        await window.Clerk.load({ ui: { ClerkUI: window.__internal_ClerkUICtor } });
+        window.Clerk.addListener(function(){ paintAuth(); });
+        paintAuth();
+      }
+    } catch (e) { /* Clerk not reachable yet - order flow still works */ }
+  });
+  var btnG = document.getElementById("btn-google");
+  var btnGh = document.getElementById("btn-github");
+  btnG.addEventListener("click", function(){
+    if (window.Clerk) { window.Clerk.openSignIn({ strategy: "oauth_google" }); }
+    else { msg.textContent = "Sign-in is warming up. You can order without it — your FIRST75 code still works at checkout."; }
+  });
+  btnGh.addEventListener("click", function(){
+    if (window.Clerk) { window.Clerk.openSignIn({ strategy: "oauth_github" }); }
+    else { msg.textContent = "Sign-in is warming up. You can order without it — your FIRST75 code still works at checkout."; }
+  });
+})();
+</script>
+</body>
+</html>

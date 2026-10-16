@@ -1,0 +1,36 @@
+# Source-of-truth repo: source only. Never media, never build output.
+# Plan sec.1 - dist/ is a build artifact and is never committed or hand-edited.
+dist/
+build/
+node_modules/
+.wrangler/
+.dev.vars
+.dev.vars.*
+.env
+.env.*
+*.log
+.DS_Store
+
+# MEDIA NEVER IN GIT (plan sec.1: the media layer is R2 / object storage)
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.avif
+*.ico
+*.mp4
+*.webm
+*.mov
+*.mp3
+*.wav
+*.ogg
+*.m4a
+*.pdf
+*.psd
+*.ai
+*.flac
+*.aac
+*.opus
+*.glb
+*.gltf
